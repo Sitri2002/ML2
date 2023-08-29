@@ -17,7 +17,7 @@ def sigmoid(X):
 def MSE(X, Y):
     return 1/X.shape[0]*np.sum((X-Y)**2)
 
-df = process_data('docs/train_data_titanic.csv')
+df = process_data('ML2/train_data_titanic.csv')
 
 val_df = df.iloc[len(df.index)-101:,:]
 train_df = df.iloc[:len(df.index)-101,:]
